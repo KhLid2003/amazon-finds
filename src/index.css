@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.featured-slider .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: white;
+  opacity: 0.5;
+}
+
+.featured-slider .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: white;
+}
+
+.featured-slider .swiper-button-prev,
+.featured-slider .swiper-button-next {
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.featured-slider .swiper-button-prev:after,
+.featured-slider .swiper-button-next:after {
+  font-size: 20px;
+}
